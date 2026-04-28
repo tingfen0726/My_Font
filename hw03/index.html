@@ -37,6 +37,12 @@
     /* 這裡路徑請確保 MOE113590043.woff2 跟這個 html 放在同一個資料夾 */
     src: url('MOE113590043.woff2') format('woff2');
   }
+
+  @font-face {
+      font-family: 'MyBig5';
+      src: url('Big5113590043.woff2') format('woff2');
+    }
+
   @font-face {
     font-family: 'MyFallback';
     src: url('Font_113590043.woff2') format('woff2');
@@ -106,7 +112,7 @@
   }
 
   p{
-    font-family: 'MyMOE', 'MyFallback', sans-serif;
+    font-family: 'MyMOE', 'MyBig5', 'MyFallback', sans-serif;
   }
 
   .container-fluid {
@@ -230,7 +236,7 @@
     <div class="col-md-12 twenty">
       <span>Big5 字體包位置連結：授權至SIL開源字型</span>
       <br>
-      <button type="button" onclick="location.href='https://github.com/lctung/ai2026s/blob/main/hw03/Big5114598033.ttf'">
+      <button type="button" onclick="location.href='https://github.com/lctung/ai2026s/blob/main/hw03/big5113590043.ttf'">
         前往查看字型
       </button>
       <div>(p.s 請記得修改網址)</div>
