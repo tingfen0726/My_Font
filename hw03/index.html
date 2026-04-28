@@ -33,9 +33,13 @@
   @font-face {
     /* font-family:'noto114598033';
     src: url(https://lctung.github.io/ai2026s/hw03/noto114598033.woff2);  */
-    font-family: 'MyMOEFont'; 
+    font-family: 'MyMOE'; 
     /* 這裡路徑請確保 MOE113590043.woff2 跟這個 html 放在同一個資料夾 */
     src: url('MOE113590043.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'MyFallback';
+    src: url('113590043.woff2') format('woff2');
   }
 
   table {
@@ -102,7 +106,7 @@
   }
 
   p{
-    font-family:'MyMOEFont', 'LXGW WenKai Mono TC';
+    font-family: 'MyMOE', 'MyFallback', sans-serif;
   }
 
   .container-fluid {
